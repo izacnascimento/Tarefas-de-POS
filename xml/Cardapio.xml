@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Cardapio>
+    <Prato id="Prato1">
+        <nome>cachorro quente</nome>
+        <Descricao>cachorro quente Brasileiro</Descricao>
+        <Ingrediente>Cebola,ovo,ketchup,mostanda,pão</Ingrediente>
+        <Preco>5 reias</Preco>
+        <calorias>400 kcal</calorias>
+        <tempo>10 minunto</tempo>
+    </Prato>
+    <Prato id="Prato2">
+        <nome>bolo de ovos</nome>
+        <Descricao>bolo de ovos Brasileiro</Descricao>
+        <Ingrediente>Marteiga,fermento, ovos, refrigerante</Ingrediente>
+        <Preco>8 reias</Preco>
+        <calorias>800 kcal</calorias>
+        <tempo>17 minunto</tempo>
+    </Prato>
+    
+    <Prato id="Prato3">
+        <nome>Lasanha Tradicional</nome>
+        <Descricao> Lasanha Tradicional </Descricao>
+        <Ingrediente>1 cebola ralada,500 g de massa de lasanha, 3 colheres de óleo</Ingrediente>
+        <Preco>8 reias</Preco>
+        <calorias>800 kcal</calorias>
+        <tempo>50 minunto</tempo>
+    </Prato>
+    <Prato id="Prato4">
+        <nome>Macarronada</nome>
+        <Descricao>Macarronada</Descricao>
+        <Ingrediente>1 lata de milho verde,1 lata de ervilha, 1 lata de molho de tomate</Ingrediente>
+        <Preco>9 reias</Preco>
+        <calorias>600 kcal</calorias>
+        <tempo>30 minunto</tempo>
+    </Prato>
+    <Prato id="Prato5">
+        <nome>Pizza Mussarela </nome>
+        <Descricao>Pizza Mussarela tradicional </Descricao>
+        <Ingrediente>1 copo de água morna, 500 gr de Farinha de Trigo, 1 colher (chá) de Açúcar</Ingrediente>
+        <Preco>35 reias</Preco>
+        <calorias>500 kcal</calorias>
+        <tempo>20 minunto</tempo>
+    </Prato>
+    <Prato id="Prato6">
+        <nome>Pizza de queijo</nome>
+        <Descricao>Pizza de queijo Brasileiro</Descricao>
+        <Ingrediente>2 xícaras de farinha de trigo,1/2 colher de sal, 1 colher (sopa) de óleo</Ingrediente>
+        <Preco>30 reias</Preco>
+        <calorias>450 kcal</calorias>
+        <tempo>20 minunto</tempo>
+    </Prato>
+</Cardapio>
