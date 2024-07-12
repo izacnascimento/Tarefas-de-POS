@@ -1,52 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Cardapio>
-    <Prato id="Prato1">
+<!DOCTYPE cardapio SYSTEM "definicoes.dtd">
+<cardapio>
+    <prato id="prato1">
         <nome>cachorro quente</nome>
-        <Descricao>cachorro quente Brasileiro</Descricao>
-        <Ingrediente>Cebola,ovo,ketchup,mostanda,pão</Ingrediente>
-        <Preco>5 reias</Preco>
+        <descricao>cachorro quente Brasileiro</descricao>
+        <ingredientes>
+               <ingrediente>Cebola</ingrediente>
+               <ingrediente>ovo</ingrediente> 
+               <ingrediente>ketchup</ingrediente> 
+               <ingrediente>mostanda</ingrediente> 
+               <ingrediente>pão</ingrediente>       
+        </ingredientes>
+        <preco> 8 reais </preco>
         <calorias>400 kcal</calorias>
         <tempo>10 minunto</tempo>
-    </Prato>
-    <Prato id="Prato2">
+    </prato>
+    <prato id="Prato2">
         <nome>bolo de ovos</nome>
-        <Descricao>bolo de ovos Brasileiro</Descricao>
-        <Ingrediente>Marteiga,fermento, ovos, refrigerante</Ingrediente>
-        <Preco>8 reias</Preco>
+        <descricao>bolo de ovos Brasileiro</descricao>
+        <ingredientes>
+            <ingrediente>Marteiga</ingrediente>
+            <ingrediente>fermento</ingrediente> 
+            <ingrediente>ovos</ingrediente> 
+            <ingrediente>refrigerante</ingrediente>       
+        </ingredientes>     
+        <preco>8 reias</preco>
         <calorias>800 kcal</calorias>
         <tempo>17 minunto</tempo>
-    </Prato>
+    </prato>
     
-    <Prato id="Prato3">
+    <prato id="Prato3">
         <nome>Lasanha Tradicional</nome>
-        <Descricao> Lasanha Tradicional </Descricao>
-        <Ingrediente>1 cebola ralada,500 g de massa de lasanha, 3 colheres de óleo</Ingrediente>
-        <Preco>8 reias</Preco>
+        <descricao> Lasanha Tradicional </descricao>
+        <ingredientes>
+            <ingrediente>1 cebola ralada</ingrediente>
+            <ingrediente>500 g de massa de lasanha</ingrediente> 
+            <ingrediente>3 colheres de óleo</ingrediente>     
+        </ingredientes>  
+        <preco>8 reias</preco>
         <calorias>800 kcal</calorias>
         <tempo>50 minunto</tempo>
-    </Prato>
-    <Prato id="Prato4">
+    </prato>
+    <prato id="Prato4">
         <nome>Macarronada</nome>
-        <Descricao>Macarronada</Descricao>
-        <Ingrediente>1 lata de milho verde,1 lata de ervilha, 1 lata de molho de tomate</Ingrediente>
-        <Preco>9 reias</Preco>
+        <descricao>Macarronada</descricao>
+        <ingredientes>
+            <ingrediente>1 lata de milho verde</ingrediente>
+            <ingrediente>1 lata de ervilha</ingrediente> 
+            <ingrediente> 1 lata de molho de tomate</ingrediente>    
+        </ingredientes>  
+        <preco>9 reias</preco>
         <calorias>600 kcal</calorias>
         <tempo>30 minunto</tempo>
-    </Prato>
-    <Prato id="Prato5">
+    </prato>
+    <prato id="Prato5">
         <nome>Pizza Mussarela </nome>
-        <Descricao>Pizza Mussarela tradicional </Descricao>
-        <Ingrediente>1 copo de água morna, 500 gr de Farinha de Trigo, 1 colher (chá) de Açúcar</Ingrediente>
-        <Preco>35 reias</Preco>
+        <descricao>Pizza Mussarela tradicional </descricao>
+        <ingredientes>
+            <ingrediente>1 copo de água morna</ingrediente>
+            <ingrediente>500 gr de Farinha de Trigo</ingrediente> 
+            <ingrediente> 1 colher (chá) de Açúcar</ingrediente>    
+        </ingredientes>  
+        <preco>35 reias</preco>
         <calorias>500 kcal</calorias>
         <tempo>20 minunto</tempo>
-    </Prato>
-    <Prato id="Prato6">
+    </prato>
+    <prato id="Prato6">
         <nome>Pizza de queijo</nome>
-        <Descricao>Pizza de queijo Brasileiro</Descricao>
-        <Ingrediente>2 xícaras de farinha de trigo,1/2 colher de sal, 1 colher (sopa) de óleo</Ingrediente>
-        <Preco>30 reias</Preco>
+        <descricao>Pizza de queijo Brasileiro</descricao>
+        <ingredientes>
+            <ingrediente>2 xícaras de farinha de trigo</ingrediente>
+            <ingrediente>1/2 colher de sal</ingrediente> 
+            <ingrediente>1/2 colher de sal</ingrediente>    
+        </ingredientes>
+        <preco>30 reias</preco>
         <calorias>450 kcal</calorias>
         <tempo>20 minunto</tempo>
-    </Prato>
-</Cardapio>
+    </prato>
+</cardapio>
