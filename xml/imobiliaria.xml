@@ -55,6 +55,7 @@
             <rua>Sitio lagoa Salgada</rua>
             <bairro>Centro</bairro>
             <cidade>Lagoa Salgada</cidade>
+            <numero>100</numero>
         </endereco>
         <caracteristicas>
             <tamanho>250 m2</tamanho>
