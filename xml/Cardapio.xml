@@ -13,7 +13,7 @@
         </ingredientes>
         <preco> 8 reais </preco>
         <calorias>400 kcal</calorias>
-        <tempo>10 minunto</tempo>
+        <tempoPreparo>10 minunto</tempoPreparo>
     </prato>
     <prato id="Prato2">
         <nome>bolo de ovos</nome>
@@ -26,7 +26,7 @@
         </ingredientes>     
         <preco>8 reias</preco>
         <calorias>800 kcal</calorias>
-        <tempo>17 minunto</tempo>
+        <tempoPreparo>17 minunto</tempoPreparo>
     </prato>
     
     <prato id="Prato3">
@@ -39,7 +39,7 @@
         </ingredientes>  
         <preco>8 reias</preco>
         <calorias>800 kcal</calorias>
-        <tempo>50 minunto</tempo>
+        <tempoPreparo>50 minunto</tempoPreparo>
     </prato>
     <prato id="Prato4">
         <nome>Macarronada</nome>
@@ -51,7 +51,7 @@
         </ingredientes>  
         <preco>9 reias</preco>
         <calorias>600 kcal</calorias>
-        <tempo>30 minunto</tempo>
+        <tempoPreparo>30 minunto</tempoPreparo>
     </prato>
     <prato id="Prato5">
         <nome>Pizza Mussarela </nome>
@@ -63,7 +63,7 @@
         </ingredientes>  
         <preco>35 reias</preco>
         <calorias>500 kcal</calorias>
-        <tempo>20 minunto</tempo>
+        <tempoPreparo>20 minunto</tempoPreparo>
     </prato>
     <prato id="Prato6">
         <nome>Pizza de queijo</nome>
@@ -75,6 +75,6 @@
         </ingredientes>
         <preco>30 reias</preco>
         <calorias>450 kcal</calorias>
-        <tempo>20 minunto</tempo>
+        <tempoPreparo>20 minunto</tempoPreparo>
     </prato>
 </cardapio>

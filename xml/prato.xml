@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cardapio xmlns:xst="http://www.w3.org/2001/XMLSchema-instance" 
+          xst:SchemaLocation="prato.xsd">
+    <prato>
+        <nome>Pão recheado com presunto</nome>
+        <refeicao>café</refeicao>
+        <ingredientes>
+            <ingrediente>500 g de farinha de trigo</ingrediente>
+            <ingrediente>2 colheres (sopa) de margarina</ingrediente>
+            <ingrediente>1 xícara (chá) de leite morno</ingrediente>
+            <ingrediente>Sal</ingrediente>
+            <ingrediente>3 ovos inteiros</ingrediente>
+            <ingrediente>300 g de presunto</ingrediente>
+            <ingrediente>3 tomates picados</ingrediente>
+            <ingrediente>300 g de mussarela</ingrediente>
+        </ingredientes>
+        <preco>25.90</preco>
+        <dataCadastro>2024-10-01</dataCadastro>
+    </prato>
+    
+    <prato>
+        <nome>Lasanha tradicional</nome>
+        <refeicao>almoço</refeicao>
+        <ingredientes>
+            <ingrediente>Massa de lasanha</ingrediente>
+            <ingrediente>Presunto: 500 g</ingrediente>
+            <ingrediente>Queijo mussarela: 500 g</ingrediente>
+            <ingrediente>Carne moída: 500 g</ingrediente>
+            <ingrediente>Molho de tomate</ingrediente>
+            <ingrediente>Sal</ingrediente>
+            <ingrediente>Pimenta-do-reino</ingrediente>
+            <ingrediente>Orégano</ingrediente>
+        </ingredientes>
+        <preco>35.50</preco>
+        <dataCadastro>2024-07-25</dataCadastro>
+    </prato>
+    
+    <prato>
+        <nome>Cuscuz tropeiro</nome>
+        <refeicao>janta</refeicao>
+        <ingredientes>
+            <ingrediente>300 gramas de flocão de milho</ingrediente>
+            <ingrediente>2 colheres de sopa de farinha de mandioca</ingrediente>
+            <ingrediente>2 e meia xícaras de água</ingrediente>
+            <ingrediente>Sal</ingrediente>
+            <ingrediente>200 gramas de bacon</ingrediente>
+            <ingrediente>200 gramas de linguiça calabresa</ingrediente>
+            <ingrediente>100 gramas de charque ou carne-seca</ingrediente>
+            <ingrediente>1 cebola grande</ingrediente>
+            <ingrediente>2 tomates</ingrediente>
+        </ingredientes>
+        <preco>40.60</preco>
+        <dataCadastro>2023-10-01</dataCadastro>
+    </prato>
+</cardapio>
