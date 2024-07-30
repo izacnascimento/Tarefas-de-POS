@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cardapio xmlns:xst="http://www.w3.org/2001/XMLSchema-instance" 
-          xst:SchemaLocation="prato.xsd">
+<!DOCTYPE quiz SYSTEM "prato.xsd">
+<cardapio xmlns:xst="http://www.w3.org/2001/XMLSchema-instance">
+
     <prato>
         <nome>Pão recheado com presunto</nome>
         <refeicao>café</refeicao>

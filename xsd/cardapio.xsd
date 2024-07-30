@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://cartaodevisitas.org"
+        xmlns:tns="http://cartaodevisitas.org"
+        elementFormDefault="qualified">
+
+    <!-- Definição do elemento raiz "cardapio" -->
+    <element name="cardapio">
+        <complexType>
+            <sequence>
+                <!-- Um ou mais elementos "prato" -->
+                <element name="prato" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <!-- Sub-elementos obrigatórios -->
+                            <element name="nome" type="string"/>
+                            <element name="ingredientes">
+                                <complexType>
+                                    <sequence>
+                                        <!-- Pelo menos um sub-elemento "ingrediente" -->
+                                        <element name="ingrediente" type="string" minOccurs="1" maxOccurs="unbounded"/>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                            <element name="preco" type="decimal"/>
+                            <element name="calorias" type="integer"/>
+                            <element name="tempoPreparo" type="string"/>
+                        </sequence>
+                        <!-- Atributo "id" obrigatório do tipo integer -->
+                        <attribute name="id" type="integer" use="required"/>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+
+</schema>

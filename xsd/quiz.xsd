@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:b="http://example.com/quiz" 
+        targetNamespace="http://example.com/quiz" 
+        elementFormDefault="qualified">
+
+    <element name="quiz" type="b:quiz_type"/>
+
+    <complexType name="quiz_type">
+        <sequence>
+            <element name="disciplina" type="string"/>
+            <element name="professor" type="b:professor_type"/>
+            <element name="turma" type="string"/>
+            <element name="data" type="string"/>
+            <element name="questões" type="b:questoes_type"/>
+        </sequence>
+        <attribute name="versao" type="string" use="required"/>
+    </complexType>
+
+    <complexType name="professor_type">
+        <sequence>
+            <element name="nome" type="string"/>
+            <element name="matrícula" type="string" minOccurs="0"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="questoes_type">
+        <sequence>
+            <element name="questão" maxOccurs="unbounded" type="b:questao_type"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="questao_type">
+        <sequence>
+            <element name="enunciado" type="string"/>
+            <element name="pontuação" type="string"/>
+            <element name="alternativas" type="b:alternativas_type"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="alternativas_type">
+        <sequence>
+            <element name="alternativa" maxOccurs="unbounded" type="b:alternativa_type"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="alternativa_type">
+        <simpleContent>
+            <extension base="string">
+                <attribute name="correta" use="required">
+                    <simpleType>
+                        <restriction base="string">
+                            <enumeration value="sim"/>
+                            <enumeration value="nao"/>
+                        </restriction>
+                    </simpleType>
+                </attribute>
+            </extension>
+        </simpleContent>
+    </complexType>
+
+</schema>
