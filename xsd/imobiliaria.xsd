@@ -43,10 +43,11 @@
                                         <xs:element name="numBanheiros" type="xs:positiveInteger"/>
                                     </xs:sequence>
                                 </xs:complexType>
-                                
+
                             </xs:element>
                             <xs:element name="valor" type="xs:string"/>
                         </xs:sequence>
+                        
                         <xs:attribute name="id" type="xs:ID" use="required"/>
                     </xs:complexType>
                 </xs:element>
