@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE prato SYSTEM "prato.xsd">
-<cardapio xmlns:xst="http://www.w3.org/2001/XMLSchema-instance">
+<cardapio xmlns:xst="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://prato.org"
+          xmlns:tns="http://prato.org"
+          tns:schemaLocation="http://prato.org prato.xsd">
 
     <prato>
         <nome>Pão recheado com presunto</nome>

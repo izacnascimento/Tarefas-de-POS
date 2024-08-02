@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE imobiliaria SYSTEM "imobiliaria.xsd">
-<!DOCTYPE imobiliaria [
-
-<!ELEMENT imobiliaria (imovel+)>
-<!ELEMENT imovel (descricao, proprietario, endereco, caracteristicas, valor)>
-<!ELEMENT descricao (#PCDATA)>
-<!ELEMENT proprietario (nome, (email+ | telefone+)*)>
-<!ELEMENT nome (#PCDATA)>
-<!ELEMENT email (#PCDATA)>
-<!ELEMENT telefone (#PCDATA)>
-<!ELEMENT endereco (rua, bairro, cidade, numero?)>
-<!ELEMENT rua (#PCDATA)>
-<!ELEMENT bairro (#PCDATA)>
-<!ELEMENT cidade (#PCDATA)>
-<!ELEMENT numero (#PCDATA)>
-<!ELEMENT caracteristicas (tamanho, numQuartos, numBanheiros)>
-<!ELEMENT valor (#PCDATA)>
-<!ELEMENT tamanho (#PCDATA)>
-<!ELEMENT numQuartos (#PCDATA)>
-<!ELEMENT numBanheiros (#PCDATA)>
-<!ATTLIST imovel id ID #REQUIRED>
-]>
-
-<imobiliaria>
-    <imovel id="imovel1">
+<imobiliaria xmlns:xst="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://imobiliaria.org"
+          xmlns:tns="http://imobiliaria.org"
+          tns:schemaLocation="http://imobiliaria.org imobiliaria.xsd">
+    
+  <imovel id="imovel1">
         <descricao>Sitio pedra Branca</descricao>
         <proprietario>
             <nome>Izac da silva</nome>
@@ -43,89 +24,89 @@
             <numBanheiros>1</numBanheiros>
         </caracteristicas>
         <valor>R$ 60.000,00</valor>
-    </imovel>
-    
-    <imovel id="imovel2">
-        <descricao>Apartamento mobiliado</descricao>
-        <proprietario>
-            <nome> David bezerra</nome>
-            <email>b.david@escolar.ifrn.edu.br</email>
-            <telefone>(84) 99876-5432</telefone>
-        </proprietario>
-        <endereco>
-            <rua>Sitio lagoa Salgada</rua>
-            <bairro>Centro</bairro>
-            <cidade>Lagoa Salgada</cidade>
-            <numero>100</numero>
-        </endereco>
-        <caracteristicas>
-            <tamanho>250 m2</tamanho>
-            <numQuartos>2</numQuartos>
-            <numBanheiros>1</numBanheiros>
-        </caracteristicas>
-        <valor>R$ 50.000,00</valor>
-    </imovel>
-    
-    <imovel id="imovel3">
-        <descricao>Sitio Pedra branca</descricao>
-        <proprietario>
-            <nome>Maria Poliana</nome>
-            <email>m.poliana@escolar.ifrn.edu.br</email>
-            <telefone>(84) 98740-4321</telefone>
-        </proprietario>
-        <endereco>
-            <rua>Sitio pedra branca</rua>
-            <bairro>Centro</bairro>
-            <cidade>boa saúde</cidade>
-            <!-- Sem número -->
-        </endereco>
-        <caracteristicas>
-            <tamanho>350 m2</tamanho>
-            <numQuartos>4</numQuartos>
-            <numBanheiros>1</numBanheiros>
-        </caracteristicas>
-        <valor>R$ 55.700,00</valor>
-    </imovel>
+  </imovel>
 
-    <imovel id="imovel4">
-        <descricao>Ruy barboza</descricao>
-        <proprietario>
-            <nome>Luiz Guilherme</nome>
-            <email>moura.guilherme@escolar.ifrn.edu.br</email>
-            <telefone>(84) 98765-4321</telefone>
-        </proprietario>
-        <endereco>
-            <rua> Sitio Ruy barboza</rua>
-            <bairro>Centro</bairro>
-            <cidade>Ruy barboza</cidade>
-            <!-- Sem número -->
-        </endereco>
-        <caracteristicas>
-            <tamanho>150 m2</tamanho>
-            <numQuartos>3</numQuartos>
-            <numBanheiros>1</numBanheiros>
-        </caracteristicas>
-        <valor>R$ 45.900,00</valor>
-    </imovel>
+  <imovel id="imovel2">
+    <descricao>Apartamento mobiliado</descricao>
+    <proprietario>
+        <nome>David bezerra</nome>
+        <email>b.david@escolar.ifrn.edu.br</email>
+        <telefone>(84) 99876-5432</telefone>
+    </proprietario>
+    <endereco>
+        <rua>Sitio lagoa Salgada</rua>
+        <bairro>Centro</bairro>
+        <cidade>Lagoa Salgada</cidade>
+        <numero>100</numero>
+    </endereco>
+    <caracteristicas>
+        <tamanho>250 m2</tamanho>
+        <numQuartos>2</numQuartos>
+        <numBanheiros>1</numBanheiros>
+    </caracteristicas>
+    <valor>R$ 50.000,00</valor>
+  </imovel>
 
-    <imovel id="imovel5">
-        <descricao>Sitio bom jesus</descricao>
-        <proprietario>
-            <nome>Wenderson da Silva</nome>
-            <email>wenderson.nascimento@escolar.ifrn.edu.br</email>
-            <telefone>(84) 98765-4321</telefone>
-        </proprietario>
-        <endereco>
-            <rua>Sitio bom jesus</rua>
-            <bairro>Centro</bairro>
-            <cidade>Bom jesus</cidade>
-            <!-- Sem número -->
-        </endereco>
-        <caracteristicas>
-            <tamanho>280 m2</tamanho>
-            <numQuartos>3</numQuartos>
-            <numBanheiros>1</numBanheiros>
-        </caracteristicas>
-        <valor>R$ 40.000,00</valor>
-    </imovel>
+  <imovel id="imovel3">
+    <descricao>Sitio Pedra branca</descricao>
+    <proprietario>
+        <nome>Maria Poliana</nome>
+        <email>m.poliana@escolar.ifrn.edu.br</email>
+        <telefone>(84) 98740-4321</telefone>
+    </proprietario>
+    <endereco>
+        <rua>Sitio pedra branca</rua>
+        <bairro>Centro</bairro>
+        <cidade>boa saúde</cidade>
+        <!-- Sem número -->
+    </endereco>
+    <caracteristicas>
+        <tamanho>350 m2</tamanho>
+        <numQuartos>4</numQuartos>
+        <numBanheiros>1</numBanheiros>
+    </caracteristicas>
+    <valor>R$ 55.700,00</valor>
+  </imovel>
+
+  <imovel id="imovel4">
+    <descricao>Ruy barboza</descricao>
+    <proprietario>
+        <nome>Luiz Guilherme</nome>
+        <email>moura.guilherme@escolar.ifrn.edu.br</email>
+        <telefone>(84) 98765-4321</telefone>
+    </proprietario>
+    <endereco>
+        <rua>Sitio Ruy barboza</rua>
+        <bairro>Centro</bairro>
+        <cidade>Ruy barboza</cidade>
+        <!-- Sem número -->
+    </endereco>
+    <caracteristicas>
+        <tamanho>150 m2</tamanho>
+        <numQuartos>3</numQuartos>
+        <numBanheiros>1</numBanheiros>
+    </caracteristicas>
+    <valor>R$ 45.900,00</valor>
+  </imovel>
+
+  <imovel id="imovel5">
+    <descricao>Sitio bom jesus</descricao>
+    <proprietario>
+        <nome>Wenderson da Silva</nome>
+        <email>wenderson.nascimento@escolar.ifrn.edu.br</email>
+        <telefone>(84) 98765-4321</telefone>
+    </proprietario>
+    <endereco>
+        <rua>Sitio bom jesus</rua>
+        <bairro>Centro</bairro>
+        <cidade>Bom jesus</cidade>
+        <!-- Sem número -->
+    </endereco>
+    <caracteristicas>
+        <tamanho>280 m2</tamanho>
+        <numQuartos>3</numQuartos>
+        <numBanheiros>1</numBanheiros>
+    </caracteristicas>
+    <valor>R$ 40.000,00</valor>
+  </imovel>
 </imobiliaria>
