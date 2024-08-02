@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quiz xmlns:xst="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://quiz.org"
+          xmlns:tns="http://quiz.org"
+          tns:schemaLocation="http://quiz.org quiz.xsd">
+
+<quiz versao="1.0"></quiz>
+    <disciplina>Programação Orientada a Serviços</disciplina>
+    <professor>
+        <nome>Professor Diego Cirilo</nome>
+        <matrícula>283153</matrícula>
+    </professor>
+    <turma>Turma Info web 4v</turma>
+    <data>17/07/2024</data>
+    <questões>
+        <questão>
+            <enunciado>Qual a capital do Brasil?</enunciado>
+            <pontuação>20</pontuação>
+            <alternativas>
+                <alternativa correta="sim">a) Brasília</alternativa>
+                <alternativa correta="nao">b) São Paulo</alternativa>
+                <alternativa correta="nao">c) Rio de Janeiro</alternativa>
+                <alternativa correta="nao">d) Belo Horizonte</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado> Qual é o clube que Gabriel Barbosa pertence atualmente?</enunciado>
+            <pontuação>20</pontuação>
+            <alternativas>
+                <alternativa correta="nao">a) Ituano</alternativa>
+                <alternativa correta="nao">b) São Paulo</alternativa>
+                <alternativa correta="sim">c) flamengo</alternativa>
+                <alternativa correta="nao">d) Botafogo</alternativa>
+            </alternativas>
+        </questão>
+   
+        <questão>
+            <enunciado>Qual é o clube que Fabricio Bruno pertence atualmente?</enunciado>
+            <pontuação>20</pontuação>
+            <alternativas>
+                <alternativa correta="nao">a) Fluminense</alternativa>
+                <alternativa correta="sim">b) Flamengo</alternativa>
+                <alternativa correta="nao">c) Gremio </alternativa>
+                <alternativa correta="nao">d) Vasco da gama</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>Qual é o clube que Bruno henrique pertence atualmente?</enunciado>
+            <pontuação>20</pontuação>
+            <alternativas>
+                <alternativa correta="nao">a) Vasco da gama</alternativa>
+                <alternativa correta="nao">b) São Paulo</alternativa>
+                <alternativa correta="nao">c) Gremio</alternativa>
+                <alternativa correta="sim">d) Flamengo</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>Qual é o clube que Pedro pertence atualmente?</enunciado>
+            <pontuação>20</pontuação>
+            <alternativas>
+                <alternativa correta="sim">a) Flamengo</alternativa>
+                <alternativa correta="nao">b) São Paulo</alternativa>
+                <alternativa correta="nao">c) Vasco da gama</alternativa>
+                <alternativa correta="nao">d) Botafogo</alternativa>
+            </alternativas>
+        </questão>
+    </questões>
+</quiz>

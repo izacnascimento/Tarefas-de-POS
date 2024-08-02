@@ -1,0 +1,88 @@
+{
+    "cardapio": {
+      "pratos": [
+        {
+          "id": 1,
+          "nome": "cachorro quente",
+          "descricao": "cachorro quente Brasileiro",
+          "ingredientes": [
+            "Cebola",
+            "ovo",
+            "ketchup",
+            "mostarda",
+            "pão"
+          ],
+          "preco": 8.00,
+          "calorias": 400,
+          "tempoPreparo": "10 minutos"
+        },
+        {
+          "id": 2,
+          "nome": "bolo de ovos",
+          "descricao": "bolo de ovos Brasileiro",
+          "ingredientes": [
+            "Manteiga",
+            "fermento",
+            "ovos",
+            "refrigerante"
+          ],
+          "preco": 8.00,
+          "calorias": 800,
+          "tempoPreparo": "17 minutos"
+        },
+        {
+          "id": 3,
+          "nome": "Lasanha Tradicional",
+          "descricao": "Lasanha Tradicional",
+          "ingredientes": [
+            "1 cebola ralada",
+            "500 g de massa de lasanha",
+            "3 colheres de óleo"
+          ],
+          "preco": 8.00,
+          "calorias": 800,
+          "tempoPreparo": "50 minutos"
+        },
+        {
+          "id": 4,
+          "nome": "Macarronada",
+          "descricao": "Macarronada",
+          "ingredientes": [
+            "1 lata de milho verde",
+            "1 lata de ervilha",
+            "1 lata de molho de tomate"
+          ],
+          "preco": 9.00,
+          "calorias": 600,
+          "tempoPreparo": "30 minutos"
+        },
+        {
+          "id": 5,
+          "nome": "Pizza Mussarela",
+          "descricao": "Pizza Mussarela tradicional",
+          "ingredientes": [
+            "1 copo de água morna",
+            "500 g de farinha de trigo",
+            "1 colher (chá) de açúcar"
+          ],
+          "preco": 35.00,
+          "calorias": 500,
+          "tempoPreparo": "20 minutos"
+        },
+        {
+          "id": 6,
+          "nome": "Pizza de queijo",
+          "descricao": "Pizza de queijo Brasileiro",
+          "ingredientes": [
+            "2 xícaras de farinha de trigo",
+            "1/2 colher de sal",
+            "1/2 colher de sal"
+          ],
+          "preco": 30.00,
+          "calorias": 450,
+          "tempoPreparo": "20 minutos"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,115 @@
+{
+    "imobiliaria": {
+      "imoveis": [
+        {
+          "id": "imovel1",
+          "descricao": "Sitio pedra Branca",
+          "proprietario": {
+            "nome": "Izac da silva",
+            "email": "izac.n@escolar.ifrn.edu.br",
+            "telefones": [
+              "(84) 98743-0416",
+              "(84) 98730-9601"
+            ]
+          },
+          "endereco": {
+            "rua": "Rua Sitio Pedra Branca",
+            "bairro": "Sitio guaxinim",
+            "cidade": "Boa saúde",
+            "numero": 15
+          },
+          "caracteristicas": {
+            "tamanho": "400 m2",
+            "numQuartos": 3,
+            "numBanheiros": 1
+          },
+          "valor": "R$ 60.000,00"
+        },
+        {
+          "id": "imovel2",
+          "descricao": "Apartamento mobiliado",
+          "proprietario": {
+            "nome": "David bezerra",
+            "email": "b.david@escolar.ifrn.edu.br",
+            "telefone": "(84) 99876-5432"
+          },
+          "endereco": {
+            "rua": "Sitio lagoa Salgada",
+            "bairro": "Centro",
+            "cidade": "Lagoa Salgada",
+            "numero": 100
+          },
+          "caracteristicas": {
+            "tamanho": "250 m2",
+            "numQuartos": 2,
+            "numBanheiros": 1
+          },
+          "valor": "R$ 50.000,00"
+        },
+        {
+          "id": "imovel3",
+          "descricao": "Sitio Pedra branca",
+          "proprietario": {
+            "nome": "Maria Poliana",
+            "email": "m.poliana@escolar.ifrn.edu.br",
+            "telefone": "(84) 98740-4321"
+          },
+          "endereco": {
+            "rua": "Sitio pedra branca",
+            "bairro": "Centro",
+            "cidade": "boa saúde",
+            "numero": null
+          },
+          "caracteristicas": {
+            "tamanho": "350 m2",
+            "numQuartos": 4,
+            "numBanheiros": 1
+          },
+          "valor": "R$ 55.700,00"
+        },
+        {
+          "id": "imovel4",
+          "descricao": "Ruy barboza",
+          "proprietario": {
+            "nome": "Luiz Guilherme",
+            "email": "moura.guilherme@escolar.ifrn.edu.br",
+            "telefone": "(84) 98765-4321"
+          },
+          "endereco": {
+            "rua": "Sitio Ruy barboza",
+            "bairro": "Centro",
+            "cidade": "Ruy barboza",
+            "numero": null
+          },
+          "caracteristicas": {
+            "tamanho": "150 m2",
+            "numQuartos": 3,
+            "numBanheiros": 1
+          },
+          "valor": "R$ 45.900,00"
+        },
+        {
+          "id": "imovel5",
+          "descricao": "Sitio bom jesus",
+          "proprietario": {
+            "nome": "Wenderson da Silva",
+            "email": "wenderson.nascimento@escolar.ifrn.edu.br",
+            "telefone": "(84) 98765-4321"
+          },
+          "endereco": {
+            "rua": "Sitio bom jesus",
+            "bairro": "Centro",
+            "cidade": "Bom jesus",
+            "numero": null
+          },
+          "caracteristicas": {
+            "tamanho": "280 m2",
+            "numQuartos": 3,
+            "numBanheiros": 1
+          },
+          "valor": "R$ 40.000,00"
+        }
+      ]
+    }
+  }
+  
