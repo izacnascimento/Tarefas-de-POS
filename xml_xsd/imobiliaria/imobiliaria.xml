@@ -23,7 +23,7 @@
             <numQuartos>3</numQuartos>
             <numBanheiros>1</numBanheiros>
         </caracteristicas>
-        <valor>R$ 60.000,00</valor>
+        <valor>60000</valor>
   </imovel>
 
   <imovel id="imovel2">
@@ -44,7 +44,7 @@
         <numQuartos>2</numQuartos>
         <numBanheiros>1</numBanheiros>
     </caracteristicas>
-    <valor>R$ 50.000,00</valor>
+    <valor>50000</valor>
   </imovel>
 
   <imovel id="imovel3">
@@ -65,7 +65,7 @@
         <numQuartos>4</numQuartos>
         <numBanheiros>1</numBanheiros>
     </caracteristicas>
-    <valor>R$ 55.700,00</valor>
+    <valor>55700</valor>
   </imovel>
 
   <imovel id="imovel4">
@@ -86,7 +86,7 @@
         <numQuartos>3</numQuartos>
         <numBanheiros>1</numBanheiros>
     </caracteristicas>
-    <valor>R$ 45.900,00</valor>
+    <valor>45900</valor>
   </imovel>
 
   <imovel id="imovel5">
@@ -107,6 +107,6 @@
         <numQuartos>3</numQuartos>
         <numBanheiros>1</numBanheiros>
     </caracteristicas>
-    <valor>R$ 40.000,00</valor>
+    <valor>40000</valor>
   </imovel>
 </imobiliaria>

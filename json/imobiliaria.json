@@ -23,7 +23,7 @@
             "numQuartos": 3,
             "numBanheiros": 1
           },
-          "valor": "R$ 60.000,00"
+          "valor": 60000.0
         },
         {
           "id": "imovel2",
@@ -44,7 +44,7 @@
             "numQuartos": 2,
             "numBanheiros": 1
           },
-          "valor": "R$ 50.000,00"
+          "valor": 50000.0
         },
         {
           "id": "imovel3",
@@ -65,7 +65,7 @@
             "numQuartos": 4,
             "numBanheiros": 1
           },
-          "valor": "R$ 55.700,00"
+          "valor": 55700.0
         },
         {
           "id": "imovel4",
@@ -86,7 +86,7 @@
             "numQuartos": 3,
             "numBanheiros": 1
           },
-          "valor": "R$ 45.900,00"
+          "valor": 45900.0
         },
         {
           "id": "imovel5",
@@ -107,7 +107,7 @@
             "numQuartos": 3,
             "numBanheiros": 1
           },
-          "valor": "R$ 40.000,00"
+          "valor": 40000.0
         }
       ]
     }
