@@ -23,26 +23,6 @@ def capital_novazelândia (country):
     capitalnovazelândia = context.getElementsByTagName('m:CapitalCityResult')[0].firstChild.nodeValue
     return capitalnovazelândia
 
-# Testando com outras três funções da API
-def nome_pais_novaZelândia(country):
-    payload = f"""<?xml version="1.0" encoding="utf-8"?>
-                <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-                <soap:Body>
-                    <CountryName xmlns="http://www.oorsprong.org/websamples.countryinfo">
-                        <sCountryISOCode>{country}</sCountryISOCode>
-                    </CountryName>
-                </soap:Body>
-                </soap:Envelope>"""
-
-    headers = {
-        'Content-Type': 'text/xml; charset=utf-8'
-    }
-
-    response = requests.post(url, headers=headers, data=payload)
-    context = parseString(response.content)
-    nome_paisnovazelândia = context.getElementsByTagName('m:CountryNameResult')[0].firstChild.nodeValue
-    return nome_paisnovazelândia
-
 def moeda_pais_novazelândia(country):
     payload = f"""<?xml version="1.0" encoding="utf-8"?>
                 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
@@ -88,10 +68,8 @@ capital = capital_novazelândia(novazelândia)
 print(f"A capital da Nova Zelândia é: {capital}")
 
 # Testando outras três funções da API
-nome_pais = nome_pais_novaZelândia(novazelândia)
 moeda = moeda_pais_novazelândia(novazelândia)
 codigo_telefone = codigo_tel_novazelândia(novazelândia)
 
-print(f"Nome do país: {nome_pais}")
 print(f"Moeda do país: {moeda}")
 print(f"Código de telefone do país: +{codigo_telefone}")
