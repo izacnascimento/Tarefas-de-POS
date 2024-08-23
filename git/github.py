@@ -4,12 +4,15 @@ from requests.auth import HTTPBasicAuth
 user = input("user: ")
 password = "g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"
 
-dados = {
-    "bio": "Isso foi alterado usado a API"
-} 
-
   
-response = requests.patch('https://api.github.com/user',
-            auth = HTTPBasicAuth('izacnascimento', password), json=dados)
+response = requests.patch('https://api.github.com/user/followers?per_page=60',
+            auth = HTTPBasicAuth('izacnascimento', password))
 
-print(response.status)
+
+seguidores = response.json()
+
+for seguidor in seguidores:
+    print(seguidor['login'])
+
+print(response.text)
+print(response)
