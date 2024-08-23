@@ -4,8 +4,9 @@ from requests.auth import HTTPBasicAuth
 user = input("user: ")
 password = "g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"
 
-  
-response = requests.put('https://api.github.com/user/followers?per_page=60',
+user = input("Digite o login do usuario para seguir: ")
+user = input("Digite o login do usuario para parar de seguir: ")
+response = requests.put('https://api.github.com/user/following/{user}',
             auth = HTTPBasicAuth('izacnascimento', password))
 
 
