@@ -25,7 +25,7 @@ def capital_da_noruega(country):
     return capitaldanoruega
 
 
-def convercao_do_numero(num):
+def number_to_text(num):
     number_words = {
         0: "zero",
         1: "one",
@@ -37,12 +37,13 @@ def convercao_do_numero(num):
         7: "seven",
         8: "eight",
         9: "nine",
-        10: "ten"
+        10: "ten",
+        223: "two hundred and twenty three"
     }
-    return number_words.get(num, "O número não corresponde na tabela!")
+    return number_words.get(num, "Numero não esta na tabela!")
 
 if __name__ == "__main__":
     # Parte 2: Converter número por extenso em inglês
-    numero_convertido = int(input("Informe um número de 0 a 10 para converter por extenso: "))
-    numero_por_extenso = convercao_do_numero(numero_convertido)
+    numero_convertido = int(input("Informe um número de 0 a 223 para converter por extenso: "))
+    numero_por_extenso = number_to_text(numero_convertido)
     print(f"O número {numero_convertido} por extenso em inglês é: {numero_por_extenso}")
