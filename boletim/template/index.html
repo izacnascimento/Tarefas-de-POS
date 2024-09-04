@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Meu App</h1>
+        <p class="description">Faça login para acessar as funcionalidades do sistema.</p>
+        <a href="{{ url_for('login') }}" class="btn-login">Clique aqui para fazer login</a>
+    </div>
+</body>
+</html>

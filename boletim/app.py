@@ -1,61 +1,65 @@
-from flask import Flask, redirect, url_for, session, request, render_template
-from requests_oauthlib import OAuth2Session
-import os
+from flask import Flask, redirect, url_for, session, render_template
+from authlib.integrations.flask_client import OAuth
+import requests
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'your_secret_key')
+app.debug = True
+app.secret_key = 'development'  # Alterar para um valor mais seguro em produção
+oauth = OAuth(app)
 
-# Configurações do OAuth2
-CLIENT_ID = os.environ.get('CLIENT_ID')
-CLIENT_SECRET = os.environ.get('CLIENT_SECRET')
-AUTHORIZATION_BASE_URL = 'https://suap.ifrn.edu.br/oauth2/authorize/'
-TOKEN_URL = 'https://suap.ifrn.edu.br/oauth2/token/'
-API_BASE_URL = 'https://suap.ifrn.edu.br/api/'
-
-def get_oauth_session(token=None):
-    return OAuth2Session(CLIENT_ID, token=token, redirect_uri=url_for('callback', _external=True))
+oauth.register(
+    name='suap',
+    client_id='SEU_CLIENT_ID',  # Substitua pelo seu client_id fornecido pelo SUAP
+    client_secret='SEU_CLIENT_SECRET',  # Substitua pelo seu client_secret fornecido pelo SUAP
+    api_base_url='https://suap.ifrn.edu.br/api/',
+    access_token_url='https://suap.ifrn.edu.br/o/token/',
+    authorize_url='https://suap.ifrn.edu.br/o/authorize/',
+    access_token_method='POST',
+    fetch_token=lambda: session.get('suap_token')
+)
 
 @app.route('/')
 def index():
-    if 'oauth_token' in session:
-        return redirect(url_for('user_profile'))
+    if 'suap_token' in session:
+        return redirect(url_for('boletim'))
     return render_template('index.html')
 
 @app.route('/login')
 def login():
-    oauth = get_oauth_session()
-    authorization_url, state = oauth.authorization_url(AUTHORIZATION_BASE_URL)
-    session['oauth_state'] = state
-    return redirect(authorization_url)
+    redirect_uri = url_for('auth', _external=True)
+    return oauth.suap.authorize_redirect(redirect_uri)
 
-@app.route('/callback')
-def callback():
-    oauth = get_oauth_session()
-    token = oauth.fetch_token(TOKEN_URL, client_secret=CLIENT_SECRET, authorization_response=request.url)
-    session['oauth_token'] = token
-    return redirect(url_for('user_profile'))
-
-@app.route('/user_profile')
-def user_profile():
-    if 'oauth_token' not in session:
-        return redirect(url_for('index'))
-    oauth = get_oauth_session(session['oauth_token'])
-    user_info = oauth.get(f'{API_BASE_URL}v2/minhas-informacoes/').json()
-    return render_template('user.html', user_info=user_info)
+@app.route('/login/authorized')
+def auth():
+    token = oauth.suap.authorize_access_token()
+    session['suap_token'] = token
+    return redirect(url_for('boletim'))
 
 @app.route('/boletim')
 def boletim():
-    if 'oauth_token' not in session:
-        return redirect(url_for('index'))
-    ano_letivo = request.args.get('ano', '2024')
-    periodo_letivo = request.args.get('periodo', '1')
-    oauth = get_oauth_session(session['oauth_token'])
-    url = f'{API_BASE_URL}v2/minhas-informacoes/boletim/{ano_letivo}/{periodo_letivo}/'
-    response = oauth.get(url)
+    if 'suap_token' not in session:
+        return redirect(url_for('login'))
+
+    token = session['suap_token']
+    ano_letivo = '2024'  # Substitua conforme necessário
+    periodo_letivo = '1'  # Substitua conforme necessário
+
+    url = f'https://suap.ifrn.edu.br/api/v2/minhas-informacoes/boletim/{ano_letivo}/{periodo_letivo}/'
+    headers = {
+        'Authorization': f'Bearer {token["access_token"]}'
+    }
+
+    response = requests.get(url, headers=headers)
     if response.status_code == 200:
         boletim_data = response.json()
         return render_template('boletim.html', boletim=boletim_data)
-    return f"Erro ao obter boletim: {response.status_code}"
+    else:
+        return f"Erro ao obter boletim: {response.status_code}", 500
+
+@app.route('/logout')
+def logout():
+    session.pop('suap_token', None)
+    return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

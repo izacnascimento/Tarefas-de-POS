@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Olá, {{ user_data.nome }}</h1>
+        <p>Seu e-mail: {{ user_data.email }}</p>
+        <a href="{{ url_for('boletim') }}" class="btn-boletim">Ver Boletim</a>
+        <a href="{{ url_for('logout') }}" class="btn-logout">Sair</a>
+    </div>
+</body>
+</html>
