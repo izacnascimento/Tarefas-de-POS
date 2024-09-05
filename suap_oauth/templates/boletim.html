@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="boletim-container">
+        <h2>Visualizar Boletim</h2>
+        <form method="post">
+            <label for="ano_letivo">Ano Letivo:</label>
+            <input type="text" id="ano_letivo" name="ano_letivo" required>
+            <label for="periodo_letivo">Período Letivo:</label>
+            <input type="text" id="periodo_letivo" name="periodo_letivo" required>
+            <input type="submit" value="Obter Boletim">
+        </form>
+
+        {% if boletim %}
+            <h3>Boletim</h3>
+            <table class="boletim-table">
+                <thead>
+                    <tr>
+                        <th>Disciplina</th>
+                        <th>Nota Unidade 1</th>
+                        <th>Nota Unidade 2</th>
+                        <th>Nota Unidade 3</th>
+                        <th>Nota Unidade 4</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for disciplina in boletim %}
+                        <tr>
+                            <td>{{ disciplina['disciplina'] }}</td>
+                            <td>{{ disciplina['nota_unidade_1'] }}</td>
+                            <td>{{ disciplina['nota_unidade_2'] }}</td>
+                            <td>{{ disciplina['nota_unidade_3'] }}</td>
+                            <td>{{ disciplina['nota_unidade_4'] }}</td>
+                            <td>{{ disciplina['situacao'] }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>Nenhum boletim encontrado.</p>
+        {% endif %}
+    </div>
+{% endblock %}
