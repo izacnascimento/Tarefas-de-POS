@@ -1,9 +1,10 @@
-from flask import Flask, redirect, url_for, session, request, render_template
+from flask import Flask, redirect, url_for, session, request, render_template, jsonify
 from authlib.integrations.flask_client import OAuth
 
 app = Flask(__name__)
 app.secret_key = 'development'
 oauth = OAuth(app)
+app.debug = True
 
 # Configuração do OAuth
 oauth.register(
@@ -11,15 +12,18 @@ oauth.register(
     client_id="seu-client-id",
     client_secret="seu-client-secret",
     api_base_url='https://suap.ifrn.edu.br/api/',
+    request_token_url=None,
+    access_token_method="POST",
     access_token_url='https://suap.ifrn.edu.br/o/token/',
     authorize_url='https://suap.ifrn.edu.br/o/authorize/',
     fetch_token=lambda: session.get('suap_token')
 )
 
 @app.route('/')
-def index():
+def index(meus_dados):
     if 'suap_token' in session:
-        return redirect(url_for('boletim'))
+    meus_dados = oauth.suap.get('/api/v2/minhas-informacoes/meus-dados/')
+    return  render_template ('user.html')
     return render_template('index.html')
 
 @app.route('/login')
@@ -41,7 +45,7 @@ def auth():
     return redirect(url_for('index'))
 
 @app.route('/boletim', methods=['GET', 'POST'])
-def boletim():
+def obter_boletim():
     if 'suap_token' not in session:
         return redirect(url_for('login'))
     
