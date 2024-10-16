@@ -1,0 +1,81 @@
+/* Estilos gerais */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Estilo para o título principal */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #003366; /* Azul escuro */
+    text-align: center;
+}
+
+/* Estilo para o botão de carregar veículos */
+#load-vehicles-btn {
+    background-color: #66B2FF; /* Azul claro */
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#load-vehicles-btn:hover {
+    background-color: #3399FF; /* Tom mais escuro de azul ao passar o mouse */
+}
+
+/* Estilo do accordion */
+.accordion-button {
+    background-color: #66B2FF; /* Azul claro */
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #3399FF; /* Azul mais escuro quando aberto */
+    color: white;
+}
+
+.accordion-item {
+    border: 1px solid white; /* Linhas divisórias brancas */
+}
+
+/* Estilo para os botões de modelo */
+.btn-info {
+    background-color: #66B2FF; /* Azul claro */
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #3399FF; /* Azul mais escuro ao passar o mouse */
+    color: white;
+}
+
+/* Estilo para os botões de detalhes dos modelos */
+.btn-secondary {
+    background-color: #66B2FF; /* Azul claro */
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #3399FF; /* Azul mais escuro */
+}
+
+/* Estilos para os detalhes dos modelos */
+.model-item p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.model-details {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+hr {
+    border-top: 1px solid white; /* Linhas divisórias brancas */
+}
