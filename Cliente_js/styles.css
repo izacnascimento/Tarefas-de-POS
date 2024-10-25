@@ -79,3 +79,16 @@ h1 {
 hr {
     border-top: 1px solid white; /* Linhas divisórias brancas */
 }
+
+/* Centraliza o botão de carregar veículos */
+#load-vehicles-btn {
+    display: block;
+    margin: 0 auto; /* Centraliza o botão */
+    background-color: #66B2FF; /* Azul claro */
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
