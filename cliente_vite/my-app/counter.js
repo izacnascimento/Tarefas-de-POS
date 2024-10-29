@@ -1,4 +1,3 @@
-// src/vehicleApi.js
 
 export async function getVehicleBrands() {
   const url = 'https://parallelum.com.br/fipe/api/v1/carros/marcas';

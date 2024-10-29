@@ -1,23 +1,21 @@
-// src/main.js
-import { getVehicleBrands, getModelsByBrand, getVehicleYears, getVehicleValue } from './counter';
-import { createAccordionItem, displayModels, displayVehicleDetails } from './domManipulation.js';
+document.getElementById('load-vehicles-btn').addEventListener('click', loadVehicles);
 
-document.getElementById('load-vehicles-btn').addEventListener('click', async () => {
-    const brands = await getVehicleBrands();
-    const vehicleAccordion = document.getElementById('vehicle-accordion');
-    vehicleAccordion.innerHTML = ''; 
+async function loadVehicles() {
+    try {
+        const url = 'https://parallelum.com.br/fipe/api/v1/carros/marcas'; 
+        const response = await fetch(url);
+        const brands = await response.json();
 
-    brands.forEach((brand, index) => {
-        const accordionItem = createAccordionItem(brand, index, async (brandCode, idx) => {
-            const models = await getModelsByBrand(brandCode);
-            displayModels(models.modelos, idx, async (modelCode, i, j) => {
-                const years = await getVehicleYears(brandCode, modelCode);
-                for (const year of years) {
-                    const details = await getVehicleValue(brandCode, modelCode, year.codigo);
-                    displayVehicleDetails(details, i, j);
-                }
-            });
-        });
-        vehicleAccordion.appendChild(accordionItem);
-    });
-});
+        // Mapeia as marcas para veículos
+        const vehicles = brands.map(brand => ({
+            clientName: brand.nome,
+            code: brand.codigo
+        }));
+
+        displayVehicles(vehicles); 
+    } catch (error) {
+        console.error('Erro ao buscar os veículos:', error);
+        alert('Não foi possível carregar os veículos.');
+    }
+}
+
