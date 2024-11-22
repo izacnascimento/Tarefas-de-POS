@@ -1,6 +1,3 @@
-import React, { useState, useEffect } from 'react';
-import styles from './components/App.css';
-
 // Hook para buscar os veículos
 function useFetchVehicles() {
     const [vehicles, setVehicles] = useState([]);
@@ -18,12 +15,12 @@ function useFetchVehicles() {
         }
 
         fetchVehicles();
-    }, []); // O hook é executado apenas uma vez, quando o componente for montado
+    }, []); 
     
     return vehicles;
 }
 
-// Componente para exibir os detalhes do modelo
+
 function VehicleModelDetails({ brandCode, modelCode, index, modelIndex }) {
     const [modelDetails, setModelDetails] = useState([]);
     
