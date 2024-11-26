@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.accordion-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
