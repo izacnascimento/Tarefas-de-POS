@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Index from './pages/Index';
-import Marcas from './pages/Marcas';
-import Modelos from './pages/Modelos';
+import Marcas from './pages/marcasdeveiculos.jsx';
+import Modelos from './pages/modelosdeveiculos.jsx';
 import Menu from './components/Menu'
 import Footer from './components/Footer'
 

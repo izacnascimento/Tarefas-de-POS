@@ -1,11 +1,10 @@
-/* Estilos gerais */
 body {
   background-color: #f8f9fa;
   font-family: Arial, sans-serif;
   color: #333;
 }
 
-/* Estilo para o título principal */
+
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -13,9 +12,8 @@ h1 {
   text-align: center;
 }
 
-/* Estilo para o botão de carregar veículos */
 #load-vehicles-btn {
-  background-color: #66B2FF; /* Azul claro */
+  background-color: #66B2FF;
   color: white;
   border: none;
   font-size: 1.2rem;
@@ -25,7 +23,7 @@ h1 {
 }
 
 #load-vehicles-btn:hover {
-  background-color: #3399FF; /* Tom mais escuro de azul ao passar o mouse */
+  background-color: #3399FF;
 }
 
 /* Estilo do accordion */
@@ -91,4 +89,10 @@ hr {
   padding: 10px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+}
+
+
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: #131414 !important;
 }
