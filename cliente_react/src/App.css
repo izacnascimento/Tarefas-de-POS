@@ -26,43 +26,42 @@ h1 {
   background-color: #3399FF;
 }
 
-/* Estilo do accordion */
+
 .accordion-button {
-  background-color: #66B2FF; /* Azul claro */
+  background-color: #66B2FF; 
   color: white;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #3399FF; /* Azul mais escuro quando aberto */
+  background-color: #3399FF; 
   color: white;
 }
 
 .accordion-item {
-  border: 1px solid white; /* Linhas divisórias brancas */
+  border: 1px solid white; 
 }
 
-/* Estilo para os botões de modelo */
+
 .btn-info {
-  background-color: #66B2FF; /* Azul claro */
+  background-color: #66B2FF; 
   border: none;
 }
 
 .btn-info:hover {
-  background-color: #3399FF; /* Azul mais escuro ao passar o mouse */
+  background-color: #3399FF; 
   color: white;
 }
 
-/* Estilo para os botões de detalhes dos modelos */
+
 .btn-secondary {
-  background-color: #66B2FF; /* Azul claro */
+  background-color: #66B2FF; 
   border: none;
 }
 
 .btn-secondary:hover {
-  background-color: #3399FF; /* Azul mais escuro */
+  background-color: #3399FF; 
 }
 
-/* Estilos para os detalhes dos modelos */
 .model-item p {
   font-size: 1rem;
   margin-bottom: 0.5rem;
@@ -96,3 +95,6 @@ hr {
   --bs-bg-opacity: 1;
   background-color: #131414 !important;
 }
+
+
+

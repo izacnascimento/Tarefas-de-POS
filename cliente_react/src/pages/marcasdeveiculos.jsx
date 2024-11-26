@@ -26,15 +26,6 @@ const marcasdeveiculos = () => {
             <div className="container mt-5">
                 <h2>Marcas do Carros</h2>
 
-                <input
-                    type="text"
-                    id="search-marca"
-                    className="form-control mb-3"
-                    placeholder="Pesquisar marca..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    disabled={marcas.length === 0} />
-
                 <table className="table table-striped table-hover table-bordered">
                     <thead className="table-dark">
                         <tr>
@@ -54,9 +45,8 @@ const marcasdeveiculos = () => {
 
                 <button
                     className="btn btn-primary rounded-pill px-3"
-                    onClick={handleLoadMarcas}
-                    disabled={isLoading}>
-                    {isLoading ? 'Carregando...' : 'Buscar Marcas'}
+                    onClick={handleLoadMarcas}>
+                    {isLoading ? 'Carregando...' : 'Solicitar as informações sobre a Marcas'}
                 </button>
             </div>
         </div>
