@@ -19,3 +19,47 @@ button {
 .accordion-button:focus {
   box-shadow: none;
 }
+
+
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.contact {
+  padding: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
