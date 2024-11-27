@@ -12,7 +12,7 @@ const Contato = () => {
           </p>
           <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <a
-              className="btn btn-outline-secondary btn-lg px-4"
+              className="btn btn-info btn-lg px-4"
               href="https://seminovos.localiza.com/carros/rn-mossoro?cidade=rn-mossoro&pht=471568655523652&gad_source=1&gclid=Cj0KCQiAgJa6BhCOARIsAMiL7V_pv5XJF59D8a63GsFgFMtcPJDB8nz1pTTm_ojD_rN5m50NF_I6nXQaAihtEALw_wcB&gclsrc=aw.ds"
               target="_blank"
               rel="noopener noreferrer"
