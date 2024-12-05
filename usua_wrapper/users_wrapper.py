@@ -89,4 +89,3 @@ if __name__ == "__main__":
             print("USUÁRIO FOI DELETANDO COM SUCESSO, TUDO OK!")
         else:
             print("DEU FALHAR AO TENTAR DELETAR UM USUÁRIO!")
-
