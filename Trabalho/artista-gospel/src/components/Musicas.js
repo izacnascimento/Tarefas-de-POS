@@ -1,7 +1,7 @@
 // src/components/Musicas.js
 
 import React, { useEffect, useState } from 'react';
-import { api } from '../api/api';
+import { api } from '../api/api.js';
 
 const Musicas = () => {
   const [musicas, setMusicas] = useState([]);

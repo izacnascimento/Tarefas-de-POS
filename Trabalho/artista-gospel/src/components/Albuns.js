@@ -1,7 +1,7 @@
 // src/components/Albuns.js
 
 import React, { useEffect, useState } from 'react';
-import { api } from '../api/api';
+import { api } from '../api/api.js';
 
 const Albuns = () => {
   const [albuns, setAlbuns] = useState([]);
